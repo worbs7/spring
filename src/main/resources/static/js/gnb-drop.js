@@ -10,7 +10,7 @@ $(function(){
 	$("#drop-menu").hide();
 	var check=true;
 	//gnb클릭시 토글처리
-	$("#gnb").hover(function(){
+	$("#gnb").click(function(){
 		if(check){
 			$("#drop-menu").stop().slideDown(500);
 			check=false;
