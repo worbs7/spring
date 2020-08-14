@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="/js/jquery-3.5.1.min.js"></script>
+	<script src="/js/gnb-drop.js"></script>
+	<script src="/js/myscript.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	
+</head>
+<body> 
+	<!-- header을 포함시키는 영역 -->
+	<div th:insert="~{commons/header :: header }" >
+	</div>
+	<!-- <div th:include="~{commons/header :: header }">
+		th:fragment 가 지정된 안쪽 내용만 include한다.
+	</div> -->
+	<div>
+		<section id="visual">
+			<h1>비주얼영역</h1>
+			<div id="visual-area">
+				<ul>
+					<li class="bg1" value="1"></li>
+					<li class="bg2" value="2"></li>
+					<li class="bg3" value="3"></li>
+					<li class="bg4" value="4"></li>
+					<li class="bg5" value="5"></li>
+				</ul>
+			</div>
+			<div id="btn-wrap" >
+				<div class="btn view-width">
+					<a href="#" id="prev"></a>
+					<a href="#" id="next"></a>
+				</div>
+			</div>
+			<div id="list-wrap" >
+			<div class="list view-width">
+				<a href="#" onclick="listClick('.bg1')"></a>
+				<a href="#" onclick="listClick('.bg2')"></a>
+				<a href="#" onclick="listClick('.bg3')"></a>
+				<a href="#" onclick="listClick('.bg4')"></a>
+				<a href="#" onclick="listClick('.bg5')"></a>
+			</div>
+			<div id="key-visual-bg">
+				<div class="key-visual">
+					<div class="key-view">
+						<ul id="key-visual-label" class="row-align">
+							<li><a href="#">늘푸른 페피의 출석 선물</a></li>
+							<li><a href="#">나만의 용 로제아</a></li>
+							<li><a href="#">신규 서버 '정원Ⅱ'</a></li>
+							<li><a href="#">카카오톡 채널 친구 맺자!</a></li>
+							<li><a href="#">오늘부터 우리는 친구</a></li>
+							<li><a href="#">공성병기: 전쟁의 진화</a></li>
+							<li><a href="#">저 하늘위로 점프!</a></li>
+							<li><a href="#">제이크와 함께 아키 福(복)캉스</a></li>
+						</ul>
+					</div>
+					<div class="pagination">
+						<a href="#"></a>
+					</div>
+					<div class="pagin row-align">
+						<a href="#"></a>
+					</div>
+					<span class="span">1/8</span>
+					<div id="pagingation-1" class="pagin-s">
+						<div>
+							<a href="#"></a>	
+						</div>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+			
+		</section>
+		<main>
+			<h1>시작페이지</h1>
+			<section class="view-width">
+			<div class="notice">
+					<div id="noticeArea"  >
+							<ul>
+								<li>새소식</li>
+							</ul>	
+						<div class="row-align" id="noticeArea-1">
+							<ul>
+								<li><a href="#">공지사항</a></li>
+							</ul>
+							<span class="uls"><a href="#">업데이트</a></span>
+						</div>
+						<div id="board-slide">
+							<ul>
+								
+								<li><a href="#"><span>[안내] 개인정보처리방안</span></a></li>
+								<li><a href="#"><span>단종된 일부 루루의 주머니 아이템의 속성변경안내</span></a></li>
+								<li><a href="#"><span>'저하늘위로 점프!' 이벤트 버그 악용</span></a></li>
+								<li><a href="#"><span>8월 12일(수) 임시 점검 보상 안내</span></a></li>
+								<li><a href="#"><span>[완료]8월 12일(수)임시점검 안내(연장)</span></a></li>
+								<li><a href="#"><span>[완료]8월 13일(목)정기점검 안내</span></a></li>
+							</ul>
+						</div>
+					</div>
+						<div class="promotion">
+							<img alt="초보 상속자" src="/images/h1.jpg">
+							<div class="info">
+								<strong>초보상속자</strong>
+								<p>쉽고 빠르게</p>
+								<p>만렙달성</p>
+							</div>
+							<img alt="복귀 혜택" src="/images/h2.jpg">
+							<div class="info-go">
+								<strong>복귀 혜택</strong>
+								<p>장비걱정</p>
+								<p>이제끝</p>
+							</div>
+						</div>
+				<div class="gamestart">
+					<a href="#" class="btn-gamestart"></a>
+						<span class="btn-inner">
+							<a href="#">게임다운로드</a>
+							<span>|</span>
+							<a href="#">서버현황</a>
+						</span>
+						<div class="login-wrap column-align">
+							<div class="xlgames-login">
+								<a href="#" class="login">
+									<strong>XLGAMES 로그인</strong>
+								</a>
+							</div>
+							<div id="login-etc" class="row-align">
+								<a href="#">회원가입</a>
+								<a href="#">아이디찾기</a>
+								<a href="#">비밀번호찾기</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="layoutTemplate view-width">
+				<div class="title-section">
+					<h2>해상 전장 시즌3 시작</h2>
+				</div>
+					<div class="main-user-contents">
+						<div class="main-user-best">
+							<div class="main-user">
+								<a href="#"><img alt="" src="/images/content1.jpg"></a>
+							</div>
+							<div class="user-contnet-info">
+								<p>8월 업데이트 영상 뉴스</p>
+								<span class="character-card">
+									<strong>ArcheAge</strong>
+								</span>
+							</div>
+						</div>
+					</div>
+			</div>
+		</main>
+	</div>
+	<div th:insert="~{commons/footer :: footer }" ></div>
+</body>
+</html>

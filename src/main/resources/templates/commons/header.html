@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<header th:fragment="header">
+      	<h1>상단영역</h1>
+      	<div>
+      		<section id="user-menu space-between" class="view-width">
+      			<h1>user-menu</h1>
+      			<div class="company-gnb row-align">
+      				<li><a href="#">XLGAMES</a></li>
+      				<div class="company-gnb">
+      					<li><a href="#">아키에이지</a></li>
+      				</div>
+      			</div>
+   				<ul class="view-width row-end-align" id="log">
+   					<li><a href="#">XL캐시</a></li> 
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">보안센터</a></li>
+					<li><a href="#">고객센터</a></li>
+				
+   				</ul>
+   			
+      		</section>
+      		<nav id="menu">
+      			<h1>main-menu</h1>
+      			<div>
+      				<section id="menu-top">
+      					<h1>memu-top</h1>
+      					<div class="view-width space-between">
+      						<div class="logo">
+      							<a href="/" title="홈으로 가기">
+      								<img alt="logo이미지" src="/images/logo_2.png">
+      							</a>
+      						</div>
+      						<ul class="left row-align" id="gnb">
+      							<li><a href="#">플레이</a></li> 
+      							<li><a href="#">아키이야기</a></li> 
+      							<li><a href="#">게임정보</a></li> 
+      							<li><a href="#">게임가이드</a></li>
+      							<li><a href="#">소식</a></li>
+      							<li><a href="#">XL캐시</a></li>
+      						</ul>
+      						
+      						<div class="search column-center-align">
+      							<form>
+      								<input type="text">
+      							</form>
+      						</div>
+      					</div>
+      				</section>
+      				<section id="menu-bottom">
+      					
+   						<!-- after가 생성이되는 위치 -->
+   						
+   						<div class="drop-menu">
+   							<div class="view-width">
+	   							<ul id="drop-menu" class="view-width row-align">
+	   								<li>
+	   									<ul>
+	   										<li>직업별 랭킹</li>
+	   										<li>경매장</li>
+	   										<li>원정대</li>
+	   										<li>월드현황</li>
+	   									</ul>
+									</li>
+		   							<li>
+		   								<ul>
+	   										<li>열린게시판</li>
+	   										<li>서버게시판</li>
+	   										<li>이미지게시판</li>
+	   										<li>플레이일지</li>
+	   										<li>연재만화</li>
+	   									</ul>
+									</li>
+		   							<li>
+		   								<ul>
+	   										<li>게임소개</li>
+	   										<li>루키우스의 기록</li>
+	   										<li>멀티미디어</li>
+	   										<li>게임음악</li>
+	   									</ul>
+		   							</li>
+		   							<li>
+		   								<ul>
+	   										<li>아키위키</li>
+	   										<li>직업 만들어보기</li>
+	   										<li>능력계산기</li>
+	   									</ul>
+		   							</li>
+		   							<li>
+										<ul>
+	   										<li>공지사항</li>
+	   										<li>업데이트</li>
+	   										<li>이벤트</li>
+	   										<li>아키인사이드</li>
+	   										<li>아미고</li>
+	   									</ul>		   							
+		   							</li>
+	   							</ul>
+   							</div>
+   						</div>
+      				</section>
+      				
+      			</div>
+      		</nav>
+      	</div>
+    </header>
+</body>
+</html>
